@@ -1,0 +1,52 @@
+<h1 style="margin: 10px;text-align:center;color: crimson;">Api Call WebPage</h1>
+<style>
+  .center {
+  margin-left: auto;
+  margin-right: auto;
+}
+table {
+  width: 50%;
+}
+</style>
+
+<table class="center" style="background-color:darkgray ;" border="1" >
+
+    <thead class="table-primary" style="color: blue;">
+  
+      <tr>
+  
+        <th scope="col"> ID </th>
+  
+        <th scope="col" >Email ID </th>
+  
+        <th scope="col">First Name </th>
+  
+        <th scope="col"> Last Name </th>
+  
+        <th scope="col"> Avatar_Profile </th>
+  
+      </tr>
+  
+    </thead>
+  
+    <tbody>
+  
+      <tr style="color:black;" *ngFor="let user of userData.data">
+  
+        <td>{{user.id}}</td>
+        <td style="color:indigo">{{user.email}}</td>
+  
+        <td style="color:red;">{{user.first_name}}</td>
+  
+        <td style="color:red;">{{user.last_name}}</td>
+  
+        <td><img class="avatar" width="70%" src={{user.avatar}}> </td>
+  
+      </tr>
+  
+  
+  
+    </tbody>
+  
+  </table>
+<router-outlet></router-outlet>

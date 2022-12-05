@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom_Elements</title>
+</head>
+<body>
+    <h1 id="myHeading">Selecting Elements</h1>
+    <ul class="tsummary summary--with-divider">
+        <li class="list-item">single element by ID: <code>getElementById()</code></li>
+        <li class="list-item">single element by CSS selector: <code>querySelector()</code></li>
+        <li class="list-item">multiple element by CSS selector: <code>querySelectorAll()</code></li>
+        <li class="list-item">multiple element by class (live): <code>getElementByClassName()</code></li>
+        <li class="list-item">multiple element by tag (live): <code>getElementByTagName</code></li>
+    </ul>
+    <script>
+        const domsHeading = document.getElementById("myHeading");
+        const domsHeading1 = document.querySelector("#myHeading");
+        const domsHeading2 = document.querySelector(".list-item");
+        const listItem = document.querySelectorAll(".list-item");
+        const Class = document.getElementsByClassName("tsummary summary--with-divider")
+        const tag = document.getElementsByTagName("li")
+
+        console.log(domsHeading);
+        console.log(domsHeading1);
+        console.log(domsHeading2);
+        console.log(listItem);
+        console.log(Class);
+        console.log(tag);
+
+    </script>
+</body>
+</html>
